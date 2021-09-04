@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { navigationItems } from "../utils/homeConstants"
 import SmallButton from "./SmallButton"
-import logo from '../public/brand/logo-black.webp'
+import logo from '../public/assets/logo-black.webp'
 import SecondaryButton from "./SecondaryButton"
 // import { Fade, Slide } from "react-reveal"
 import { useState } from "react"
@@ -18,7 +18,7 @@ const NavigationBar = (): JSX.Element => {
 	return (
 		<nav className="h-16 xl:h-20 w-full fixed inset-0 z-20 bg-primary-default backdrop-filter backdrop-blur-md bg-opacity-90">
 			<div className="sm:max-w-lg lg:max-w-4xl xl:max-w-xxl h-16 xl:h-20 mx-auto my-auto px-6 xl:px-32 py-2 flex align-middle justify-between">
-				<div className="hidden lg:inline-block my-auto">
+				<div className=" lg:inline-block my-auto">
 					<Link href="/">
 						<a className="flex align-middle justify-center">
 							<Image
@@ -31,18 +31,18 @@ const NavigationBar = (): JSX.Element => {
 					</Link>
 				</div>
 
-				<div className="inline-block lg:hidden my-auto">
+				{/* <div className="inline-block lg:hidden my-auto">
 					<Link href="/">
 						<a className="flex align-middle justify-center">
 							<Image
-								src="/favicon.webp"
+								src={logo}
 								alt="paycheep-logo"
 								width={42}
 								height={42}
 							/>
 						</a>
 					</Link>
-				</div>
+				</div> */}
 
 				<div className="my-auto hidden xl:flex align-middle justify-between">
 					<div className="my-auto flex align-middle justify-between">
@@ -66,7 +66,7 @@ const NavigationBar = (): JSX.Element => {
 					onClick={toggleMenu}
 					className="py-2 appearance-none rounded-full relative focus:outline-none cursor-default inline-block xl:hidden my-auto"
 				>
-					<div className="border-b-1.5 pt-1.5 mb-1.5 w-10 border-white" />
+					<div className="border-b-1.5 pt-1.5 mb-1.5 w-10 border-black" />
 					<div className="border-b-1.5 pt-1.5 mb-1.5 w-7 border-black ml-auto" />
 				</button>
 
