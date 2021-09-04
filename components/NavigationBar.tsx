@@ -66,7 +66,7 @@ const NavigationBar = (): JSX.Element => {
 					onClick={toggleMenu}
 					className="py-2 appearance-none rounded-full relative focus:outline-none cursor-default inline-block xl:hidden my-auto"
 				>
-					<div className="border-b-1.5 pt-1.5 mb-1.5 w-10 border-black" />
+					<div className="border-b-1.5 pt-1.5 mb-1.5 w-10 border-white" />
 					<div className="border-b-1.5 pt-1.5 mb-1.5 w-7 border-black ml-auto" />
 				</button>
 
