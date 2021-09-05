@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { navigationItems } from "../utils/homeConstants"
 import SmallButton from "./SmallButton"
-import logo from '../public/assets/logo-black.webp'
+import logo from '../public/brand/logo-black.webp'
 import SecondaryButton from "./SecondaryButton"
 // import { Fade, Slide } from "react-reveal"
 import { useState } from "react"
