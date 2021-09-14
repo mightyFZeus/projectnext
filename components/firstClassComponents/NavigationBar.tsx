@@ -40,7 +40,7 @@ const NavigationBar = () => {
                 toggle?
                     <div className='  flex flex-col gap-10 items-center mt-8   '>
                         {NavigationItems.map((item)=>(
-                                <p className='capitalize'>{item}</p>
+                                <p key={item} className='capitalize'>{item}</p>
                             ))}
                         <PrimaryButton 
                             url='https://goal.com'
