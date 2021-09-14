@@ -17,7 +17,7 @@ const NavigationBar = () => {
                         
                 <div className=' hidden lg:flex gap-10   '>
                     {NavigationItems.map((item)=>(
-                            <p className='capitalize'>{item}</p>
+                            <p key={item} className='capitalize'>{item}</p>
                         ))}
                     <PrimaryButton 
                         url='https://goal.com'
