@@ -16,6 +16,9 @@ module.exports = {
     lineHeight: {
       base: "66px",
     },
+    height:{
+      line : '1px'
+    },
 
     borderRadius: {
       base: "200px",
