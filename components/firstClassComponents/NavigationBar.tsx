@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
+import Image from 'next/image'
 import { NavigationItems } from '../../utils/constants'
 import PrimaryButton from '../buttons/PrimaryButton'
+import logo from '../../public/brand/logo-white.webp'
 
 const NavigationBar = () => {
     const [toggle, setToggle] = useState(false)
@@ -10,14 +12,15 @@ const NavigationBar = () => {
     }
     return (
        <div>
-            <nav className='flex justify-between xl:px-32 px-4 py-6 bg-white'>
+            <nav className='flex justify-between  xl:px-32 px-4 py-6 bg-white'>
                 <div className=''>
-                    <p>MyHealth</p>
+                   <Image src={logo} alt='brand logo' width='150' height='30'/>
+                   {/* <p>logo</p> */}
                 </div> 
                         
                 <div className=' hidden lg:flex gap-10   '>
                     {NavigationItems.map((item)=>(
-                            <p key={item} className='capitalize'>{item}</p>
+                            <p key={item} className=' mt-2 font-light  capitalize'>{item}</p>
                         ))}
                     <PrimaryButton 
                         url='https://goal.com'
